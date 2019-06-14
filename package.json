@@ -1,0 +1,54 @@
+{
+  "name": "rollup-babel-eslint-jest-flow-template",
+  "version": "0.0.1",
+  "description": "This is a template to build nodejs app.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "test": "jest",
+    "index": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:greatbody/rollup-babel-eslint-jest-flow-template.git"
+  },
+  "author": "pfx",
+  "license": "PRIVATE",
+  "bugs": {
+    "url": "https://github.com/greatbody/rollup-babel-eslint-jest-flow-template/issues"
+  },
+  "homepage": "https://github.com/greatbody/rollup-babel-eslint-jest-flow-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@types/jest": "^24.0.12",
+    "@types/node": "^11.13.7",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-jest": "^2.1.1",
+    "eslint-plugin-flowtype": "^3.10.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "flow-bin": "^0.101.0",
+    "jest": "^24.7.1",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-copy": "^1.1.0",
+    "rollup-plugin-flow": "^1.1.1",
+    "rollup-plugin-node-resolve": "^4.2.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}

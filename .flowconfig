@@ -1,0 +1,16 @@
+[ignore]
+
+[include]
+./src/types/
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='.*\(.txt\)' -> 'empty/object'
+module.name_mapper='^@/\(.*\)$' -> '<PROJECT_ROOT>/src/\1/index.js'
+module.name_mapper='^@/\(.*\)$' -> '<PROJECT_ROOT>/src/\1.js'
+module.name_mapper='^@/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+module.system.node.resolve_dirname=node_modules
+module.file_ext=.js
+[strict]
