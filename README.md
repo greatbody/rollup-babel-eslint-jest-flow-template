@@ -1,6 +1,16 @@
 # Introduction
 This is a template to build nodejs app
 
+# Pre-requirements
+
+- VSCode installed
+- VSCode Plugin Installed
+  - ESLint
+  - Flow Language Support
+- Node Installed
+- NPM Installed
+- Git Installed
+
 # Usage
 
 > Step 1
